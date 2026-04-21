@@ -41,8 +41,8 @@ BuildOption:    -DSHARE_INSTALL_PREFIX=%{tde_prefix}/share
 BuildOption:    -DDATA_INSTALL_DIR=%{tde_prefix}/share/apps
 BuildOption:    -DBUILD_ALL=ON
 
-BuildRequires:	trinity-tqtinterface-devel >= %{tde_version}
-BuildRequires:	trinity-arts-devel >= 1:1.5.10
+BuildRequires:	pkgconfig(tqt)
+BuildRequires:	trinity-arts-devel >= 1.5.10
 BuildRequires:	trinity-tdelibs-devel >= %{tde_version}
 BuildRequires:	trinity-tdebase-devel >= %{tde_version}
 BuildRequires:	trinity-tdegames-devel >= %{tde_version}
